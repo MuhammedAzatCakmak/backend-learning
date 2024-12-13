@@ -1,0 +1,65 @@
+JAVA VIDEO 1
+
+
+# CHAPTER 1 #
+
+- Java tarihçe
+- WRITE ONCE, RUN EVERYWHERE!
+- Temel prensipler : simple,  object oriented,  familiar, secure and robust(sağlam,güçlü),  high performance,   archtecture-neutral(mimari-nötr) and portable(taşınabilir),  interpreted(yorumlayıcı, derleyici) and threaded(aynı anda birden fazla iş yapmasını sağlayan yapı)...
+- Overwiew(genel bakış) = JVM JRE JDK,  packate declerations,  creating objects,  initilaization, primitives and object referances,  local, instrance, class variable,  destroying objects,  naming conflicts...
+
+
+- Obje olusturma -> memoryde heapde olusturulur. Referans alarak...
+- Constructors -> nesneler aracılığıyla initializer blocks çalışır. Instance initializer blocks. 
+
+
+- Instance initializer blocks  and  order of initialization...
+-  Order of Inıtialization !! = nesne olusturduktan sonra class icerisinde yukarıdan asagiya dogru ilk once instance variables sonrasında constructor calisir !
+
+
+- Primitive  and Literal,  numeric literal...
+- Float ile double arasindaki farki ide nasil anlar? -> float degiskenimizin degeri yazdiktan sonra sonun F konur. diger turlu default olarak double olusturur.
+- Referance types
+- Key differences
+- Referance types ve primitive types arasindaki farklar? Bu tiplerle neler yapilabilir, yapilamaz? Ornegin primitive tipte degiskene null atanamaz ama referans tipte degiskenimize null atayabiliriz. Ya da primitive tipler uzerinden method cagirilmaz ama referans tipler uzerinden method cagrilabilir.
+
+
+- Variable names biliyorsun...
+- java reserved keysler ile degisken isimleri olusturulamaz.
+- Local variables -> bloklar icerisinde var olabilir sadece. Memoryde stack kolunda heap icerisinde tutulur. Blok kapaninca silinir.
+
+
+- Instance and Class Variables
+- instance variables'lere (ornegin public static int ) nesne olusturmadan erisebiliriz.
+- class variables'lere (public int) nesne olusturmadan erisemeyiz.
+- Variable Scope
+
+
+- Referance vs Object !
+- Referance = Heap'te degildir. Heap'te yer alan bir objeyi point eden, gosteren bir varlik. Objelere referansla ulasiriz. Referans tek basina var olamaz, referansin bir seylere bagli olmasi gerekiyor. Ayni sekilde object de referanssiz olmaz. Referens tek basina var olmaya calistiginde Compiler uyarir, object tek basina var olmaya calistiginda garbage collector tarafindan toplanir !!!
+- Objeyi gosteren referansij baska bir objeyi gostermesini saglayabiliriz. Videoda var.
+
+
+- Garbage Collection
+- System.gc() = programin sonunda bu komutu kullanarak memorydeki bos kalan object ve degisken vs diger elemanlari bellekten atar.
+- kendimiz cagirmasak da kendi kendine calisirdi.
+
+
+
+
+# CHAPTER 2 #
+
+- Unary, Binary, Ternary
+- Promotion(yukseltme, terfi) -> short->int , int->long, float->double  bu ture sahip olan degiskenler isleme girdiginde sonucumuz yuksek degerli ture gore belirlenir.
+- Casting Primitives
+- Compound Assignment (birleşik atama) -> Ornegin  y = y + 5 yazmak yerine y += 5 yazma islemine denir.
+
+
+- String pool -> primitive stringler memoryde ayni yerde bulunurlar. ama icerigi ayni olsa bile nesneler ile primitive stringler memorynin ayni bolgesinde bulunamazlar.
+- string1 == string2 dedigimiz zaman hafizadaki yerine gore bir kontrol gerceklestirecek. string1.equals(string2) dedigimiz zaman degiskenlerin iceriklerini kontrol edecektir. eger esitlerde true degillerse false dondureceklerdir!!
+Yani kisacasi "==" dedigimizde AYNILIK karsilastirmasi, ".equals()" dedigimizde esitlik karsilastirmasi yapmis oluyoruz.
+
+
+- String Builder -> string bir degere baska bir string deger eklemek istedigimizde (kisacasi concatenating) s1 += dersek bellekte ekstra fazla alan kullanacaktir. cunku bu islem her seferinde yeni object olusturarak yapilacaktir. Bu yuzden String Builder kullanmak daha mantiklidir. Ornegin alpha += current demek yerine alpha.append(current) dersek hem cpu'ya hem de memory'ye daha az yuklenmis oluruz.
+
+
