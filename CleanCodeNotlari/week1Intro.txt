@@ -1,0 +1,42 @@
+CLEAN CODE (Robert Cecil Martin)
+
+--> Kısacası temiz kod yazan bir programcı boş bir ekranı bir dizi dönüşümden geçirerek zarif bir şekilde kodlanmış bir sistem haline getirebilen bir sanatçıdır.
+
+--> BJARNE STROUSTRUP'IN (C++ Mucidi) CLEAN CODE TANIMI VE TANIMINDAKI OZELLIKLER: 
+"Kodumun zarif ve verimli olmasını istiyorum. Mantık, hataların gizlenmesini zorlaştırmak için açık ve basit olmalı; bağımlılıklar en az düzeyde tutulmalı, bakım kolay olmalı, hata yönetimi iyi bir stratejiye uygun yapılmalı ve performans, optimal seviyeye yakın olmalı ki insanlar kodu, gereksiz optimizasyonlarla karmaşık hale getirmeye çalışmasın. Temiz kod, tek bir şeyi iyi yapar."
+
+	- zarif ve verimli olmalı
+	- açık ve basit olmalı
+	- bağımlılıklar en az düzeyde tutulmalı
+	- bakımı kolay olmalı
+	- hata yönetimi iyi bir stratejiye uygun yapılmalı
+	- performans optimal seviyeye yakın olmalı
+	- * tek bir şeyi iyi bir şekilde yapmak !
+
+--> Kötü kod düzensizliği büyümeye teşvik eder. Başkaları kötü kodu değiştirdiğinde, genellikle daha da kötüleştirirler.
+
+--> GRADY BOOCH'UN (Object-Oriented Analysis and Design with Applications kitabının yazarı) TANIMI: "Temiz kod basit ve doğrudandır. Temiz kod, iyi yazılmış bir nesir gibi okunur. Temiz kod, tasarımcının niyetini asla bulanıklaştırmaz; bunun yerine net soyutlamalar ve doğrudan kontrol hatlarıyla doludur."
+
+--> Temiz kod, çözülmesi gereken sorunları net bir şekilde ortaya koymalı. Bu gerilimi bir doruk noktasına taşımalı ve sonra çözmelidir.
+
+--> "BIG" DAVE THOMAS'IN (OTI'nin kurucusu ve Eclipse stratejisinin babası) TANIMI: "Temiz kod bir geliştirici tarafından okunabilir ve geliştirebilir olmalıdır, yalnızca orijinal yazarı değil. Birim ve kabul testlerine sahiptir. Anlamlı isimlere sahiptir. Tek bir şeyi yapmak için birden fazla yol yerine tek bir yol sunar. Minimum bağımlılıklara sahiptir, bu bağımlılıklar açıkça tanımlanmıştır ve net bir minimum API sağlar. Kod, yazılı olarak ifade edilebilir olmalıdır çünkü dile bağlı olarak gerekli tüm bilgiler yalnızca kodda açıkça ifade edilemez."
+
+--> Dave daha çok kodun yazılabilirlik, test, minimalize boyutu olması gerektiğini savunmuştur. Aynı zamanda kodun sadece okunabilirliği değil, başkaları tarafından kolayca geliştirilebilir olması gerektiği de önemlidir.
+
+--> MICHAEL FEATHERS'IN (Working Effectively with Legacy Code yazarı) TANIMI: "Temiz kodda fark ettiğim tüm özellikleri sıralayabilirim, ancak bunların tümüne yol açan bir özellik var: Özen. Temiz kod, her zaman önemseyen biri tarafından yazılmış gibi görünür. Kodda 'Bunu daha iyi yapmak için açıkça yapabileceğiniz bir şey yoktur.' Tüm bu detaylar, kodun yazarı tarafından düşünülmüş. Eğer iyileştirmeler yapmayı düşünürseniz, size bırakılan kodun değerini takdir etmeye yönlendirilirsiniz. Kod, işine özenle yaklaşan biri tarafından yazılmıştır."
+
+--> RON JEFFRIES'IN (xtreme Programming Installed ve Extreme Programming Adventures in C# yazarı) TANIMI : "Son yıllarda, basit kodla ilgili olarak Beck'in kurallarıyla başlar ve biterim. Öncelik sırasına göre basit kod:
+
+- Tüm testleri çalıştırır;
+- Yinelenen şeyler içermez;
+- Sistemde yer alan tüm tasarım fikirlerini ifade eder;
+- Sınıflar, metotlar, fonksiyonlar ve benzerleri gibi varlıkların sayısını en aza indirir.
+
+Bunlardan, genellikle yinelenmeyi (duplikasyonu) önlemeye odaklanırım. Aynı şey tekrar tekrar yapıldığında, bunun genellikle tam olarak temsil edilmeyen bir fikrin işareti olduğuna inanırım. Bu fikrin ne olduğunu anlamaya çalışırım. Sonra bu fikri daha açık bir şekilde ifade etmeye çalışırım.
+
+İfade edilebilirlik benim için anlamlı isimleri içerir ve genellikle yerleştikten sonra isimleri birkaç kez değiştirmeyi seviyorum. Eclipse gibi modern kodlama araçlarıyla yeniden adlandırma oldukça ucuzdur, bu yüzden değiştirmek benim için sorun olmaz. İfade edilebilirlik öncelikli gelir."
+
+--> Clean Code u clean code yapan şey: Azaltılmış yinelenme ve Yüksek ifade edilebilirlik.
+
+
+--> WARD CUNNINGHAM'IN (Wiki'nin mucidi, Fit'in mucidi, eXtreme Programming'in eş-mucidi) TANIMI : "Bir rutinin tam olarak beklediğiniz gibi sonuçlandığını gördüğünüzde, temiz bir kod üzerinde çalıştığınızı bilirsiniz. Kodun, dilin sorun için özel olarak yapılmış gibi görünmesini sağladığı zaman ona güzel bir kod diyebilirsiniz."
